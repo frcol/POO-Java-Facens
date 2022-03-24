@@ -1,4 +1,4 @@
-package aula2;
+package aula2.demo2;
 
 public class Pessoa {
     private String cpf;
