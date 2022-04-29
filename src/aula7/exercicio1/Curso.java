@@ -1,4 +1,4 @@
-package aula7;
+package aula7.exercicio1;
 
 import java.util.ArrayList;
 
@@ -6,17 +6,17 @@ public class Curso {
     private int codigo;
     private String nome;
     private int cargaHoraria;
-    private ArrayList<Aluno> lstAlunos; // <-- relacionamento
+    private ArrayList<Aluno> lstAlunos;
     
     public Curso() {
         lstAlunos = new ArrayList<>();
     }
-
+    
     public Curso(int codigo, String nome, int cargaHoraria) {
-         this();
-         this.nome = nome;
-         this.cargaHoraria = cargaHoraria;
-         this.codigo = codigo;
+        this();
+        this.codigo =  codigo;
+        this.nome = nome;
+        this.cargaHoraria =cargaHoraria;
     }
 
     public int getCodigo() {
@@ -47,29 +47,31 @@ public class Curso {
         return lstAlunos;
     }
 
-    public void setLstAlunos(ArrayList<Aluno> lstAlunos) {
-        this.lstAlunos = lstAlunos;
+    // ==================================================
+    public void inserirAluno(Aluno newAluno) {
+        lstAlunos.add(newAluno);
     }
     
-    public void inserirAluno(Aluno aluno) {
-        lstAlunos.add(aluno);
-    }
-    
-    public void removeAluno(int index) {
+    public void removerAluno(int index) {
         lstAlunos.remove(index);
     }
     
+    // sobrecarga - coloquei a mais
+    public void removerAluno(Aluno aluno) {
+        lstAlunos.remove(aluno);
+    }
+    // ---------------------------
+    
     public String imprimir() {
-        return "\nCodigo: "+codigo+
-               "\nNome: "+nome+
-               "\nCarga horaria: "+cargaHoraria;
+        return "\n Codigo: "+codigo+
+                "\n Nome: "+nome+
+                "\n Carga horária: "+cargaHoraria;
     }
     
     public String imprimirCompleto() {
-        String msg = imprimir()+"\n =========== ";
-        
-        for (Aluno alunoTmp : lstAlunos) {
-            msg += alunoTmp.imprimir()+"\n ------------";
+        String msg = imprimir() + "\n ### ALUNOS ###\n";
+        for (Aluno aluno : lstAlunos) {
+            msg += aluno.imprimir() + "\n";
         }
         
         return msg;

@@ -1,12 +1,12 @@
-package aula7;
+package aula7.exercicio1;
 
 public class Aluno {
     private String ra;
     private String nome;
     
     public Aluno(String ra, String nome) {
-        this.nome = nome;
         this.ra = ra;
+        this.nome = nome;
     }
 
     public String getRa() {
@@ -27,6 +27,6 @@ public class Aluno {
     
     public String imprimir() {
         return "\nRA: "+ra+
-               "\nNome: "+nome; 
+                "\nNome: "+nome;
     }
 }
