@@ -51,7 +51,7 @@ public class Main {
                         for (int x=0; x < curAtual.getLstAlunos().size(); x++) {
                             Aluno tmp = curAtual.getLstAlunos().get(x);
                             if (tmp.getRa().equals(ra)) {
-                                curAtual.removerAluno(tmp);
+                                curAtual.removerAluno(x);
                             }
                         }
                         curAtual = null;
