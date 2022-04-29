@@ -48,12 +48,6 @@ public class Main {
                     curAtual = getCurso(lstCursos);
                     if (curAtual != null) {
                         String ra = JOptionPane.showInputDialog("RA: ");
-                        /*for (Aluno aluTmp : curAtual.getLstAlunos()) {
-                            if (aluTmp.getRa().equals(ra)) {
-                                curAtual.removerAluno(aluTmp);
-                                break;
-                            }
-                        }*/
                         for (int x=0; x < curAtual.getLstAlunos().size(); x++) {
                             Aluno tmp = curAtual.getLstAlunos().get(x);
                             if (tmp.getRa().equals(ra)) {
