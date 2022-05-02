@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Dados/Java/POOFacens/src/aula7/Curso.java</file>
-            <file>file:/E:/Dados/Java/POOFacens/src/aula7/Aluno.java</file>
-            <file>file:/E:/Dados/Java/POOFacens/src/aula7/Main.java</file>
+            <file>file:/E:/Dados/Java/POOFacens/src/aula10/PessoaFisica.java</file>
+            <file>file:/E:/Dados/Java/POOFacens/src/aula10/Main.java</file>
+            <file>file:/E:/Dados/Java/POOFacens/src/aula10/Pessoa.java</file>
+            <file>file:/E:/Dados/Java/POOFacens/src/aula10/PessoaJuridica.java</file>
+            <file>file:/E:/Dados/Java/POOFacens/src/MainTemplate.java</file>
         </group>
     </open-files>
 </project-private>
