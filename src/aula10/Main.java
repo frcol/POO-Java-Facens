@@ -27,6 +27,7 @@ public class Main {
                     celular = JOptionPane.showInputDialog("Celular:");
                     
                     lstPessoas.add(new PessoaFisica(nome, doc, email, celular));
+              
                 break;
                 case "2":
                     nome = JOptionPane.showInputDialog("Razao Social:");
@@ -35,10 +36,12 @@ public class Main {
                     celular = JOptionPane.showInputDialog("Celular:");
                     
                     lstPessoas.add(new PessoaJuridica(nome, doc, email, celular));
+                    
                 break;
                 case "3":
                     if (!lstPessoas.isEmpty()) {
                         String msg = "";
+                        
                         for (Pessoa pessoa : lstPessoas) {
                             msg += pessoa.imprimir();
                         }

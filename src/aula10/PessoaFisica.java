@@ -1,6 +1,6 @@
 package aula10;
 
-public class PessoaFisica extends Pessoa {
+public class PessoaFisica extends Pessoa implements I_ImplementaXPTO{
     private String nome;
     private String cpf;
 
@@ -33,6 +33,11 @@ public class PessoaFisica extends Pessoa {
     public String imprimir() {
         return "\n Nome: "+nome+
                 "\n CPF: "+cpf+
-                super.imprimir();          
+                "\n email:"+getEmail();
+    }
+
+    @Override
+    public void xpto() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

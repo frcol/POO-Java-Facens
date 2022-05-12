@@ -1,6 +1,6 @@
 package aula10;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String email;
     private String celular;
 
@@ -28,8 +28,5 @@ public class Pessoa {
         this.celular = celular;
     }
     
-    public String imprimir() {
-        return "\n EMail: "+getEmail()+
-                "\n Celular: "+getCelular();          
-    }
+    public abstract  String imprimir();
 }

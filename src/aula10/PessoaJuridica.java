@@ -1,6 +1,6 @@
 package aula10;
 
-public class PessoaJuridica extends Pessoa{
+public class PessoaJuridica extends Pessoa implements I_ImplementaXPTO{
     private String razao;
     private String cnpj;
 
@@ -32,7 +32,11 @@ public class PessoaJuridica extends Pessoa{
     @Override
     public String imprimir() {
         return "\n Razao Social: "+razao+
-                "\n CNPJ: "+cnpj+
-                super.imprimir();
+                "\n CNPJ: "+cnpj;
+    }
+
+    @Override
+    public void xpto() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
